@@ -22,7 +22,7 @@ for t in trends[0]['trends']:
     if i<10:
         t10trends.append(t['name'])
     i+=1
-print(t10trends)
+
 def deEmojify(inputString):
     return emoji.get_emoji_regexp().sub(u'', inputString) # remove regular emojis using emoji package in string
 
@@ -48,15 +48,18 @@ def rating(tweets):
         return -10
     return totalscore/count
 f=open("trending_relevant.txt","w")
+trendopinions=open("trendopinions.txt","w")
+
 for t in t10trends:
     tweets=api.search(q=t,count=10,result_type='popular')
     rat=rating(tweets)
-    print(rat)
     if rat!=-10:
-        if rat<-0.2:
+        trendopinions.write(t+" "+str(rat)+"\n")
+        if rat<-0.1:
             f.write(t+"\n")
             for tweet in tweets:
                 # try:
+                
                 f.write("".join(tweet.id_str+"\n") )# this writes the links to a text file to be processed by another script to make the code modular
                 # except:
                 #     ""
