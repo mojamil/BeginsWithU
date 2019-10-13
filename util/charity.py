@@ -9,11 +9,11 @@ nltk.download('stopwords')
 s=set(stopwords.words('english'))
 
 translator = Translator()
-consumer_key="qnPdxzRBALjDJ99XuAw9O4qK5"
-consumer_secret="7ZYQSrFHC45Sdag4nZdLWxvmKUvC1RqBynW7ws6UqK8uxWoJPy"
+consumer_key=""
+consumer_secret=""
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-access_token="799410017145339905-BV5PBq4XsBnTd0rNKgUJbaVp2Wjv4MU"
-access_token_secret="51iVHaZhJWfRjWJvGcruYLmmV3KmGBI9omjltzMA13y9D"
+access_token=""
+access_token_secret=""
 auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
