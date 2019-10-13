@@ -1,5 +1,10 @@
 # BeginsWithU
 
+## Summary
+With social media networks connecting people all over the world on a daily basis, people can openly talk about
+important issues. BeginsWithU allows users, who are interested in a specific issue, to access informative
+articles and discover charities to help change the world.
+
 ## Instructions
 - Install python3 and pip
 - Clone Repository
