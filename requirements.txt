@@ -88,7 +88,7 @@ thinc==7.1.1
 tqdm==4.36.1
 tweepy==3.8.0
 tweet-parser==1.13.2
-Twisted==17.9.0
+Twisted==19.7.0
 ufw==0.36
 unattended-upgrades==0.1
 urllib3==1.25.6
