@@ -13,6 +13,7 @@ articles and discover charities to help change the world.
 ```
 pip install -r requirements.txt 
 ```
+- Three files(config.py,trending.py,charity.py) require twitter oauth authentication, for that you can create your own twitter dev account, or contact me for the credentials
 - Run trending.py from the utils folder and then run charity.py
 - Run bot.py and tweet "how to help" @bwuhelpbot and wait a minute for it to reply with a link.
 - Run app.py to see extra information
